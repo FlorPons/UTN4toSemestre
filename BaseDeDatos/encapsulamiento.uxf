@@ -1,0 +1,19 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>150</x><y>80</y><w>210</w><h>150</h></coordinates><panel_attributes>Camara
+--
+-marca
+-color
+-año
+--
+Funciones:
++encender
++apagar
++sacar fotos
++grabar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>20</y><w>100</w><h>30</h></coordinates><panel_attributes>ENCAPSULACIÓN:</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>80</y><w>210</w><h>150</h></coordinates><panel_attributes>Aro de luz
+--
+-color
+-modelo
+-
+
+Funciones:
++ Iluminar
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
