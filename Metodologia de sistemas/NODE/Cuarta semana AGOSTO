@@ -1,1 +1,21 @@
+2.1 Viendo variables let y const , con ejecución en terminal
+
+const nombre = "Ariel";
+console.log(nombre);
+
+const nombre2 = "Juan";
+console.log(nombre2);
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.2 Terminamos con un hola mundo y añadimos buena información sobre Node
+
+const nombre = "Ariel";
+console.log(nombre);
+
+const nombre2 = "Juan";
+console.log(nombre2);
+
+console.log("hOLA MUNDO DESDE nODE");
+
 
