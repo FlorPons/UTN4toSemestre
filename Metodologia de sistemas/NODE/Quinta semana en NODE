@@ -1,1 +1,8 @@
+3.1 Función flecha con template String
+
+const saludar = (nombre) =>{ //funsion de flecha
+    return`Saludos de ${nombre}`; //usamos back tic's
+} //esto es igual a: "saludos" + nombre;
+
+console.log(saludar("Ariel"));
 
