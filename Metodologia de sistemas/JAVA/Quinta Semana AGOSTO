@@ -1,1 +1,42 @@
+//3.1 Teoría -> Creación del paquete modelo y la clase entidad Estudiante = Parte 1, 2 y 3
+// Marino Alfredo 
+package utn.estudiantes.modelo;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
+@Entity
+//boilerplate - Repetitivo
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class Estudiante {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer idEstudiante;
+    private String nombre;
+    private String apellido;
+    private String telefono;
+    private String email;
+}
+//3.3Creamos el paquete de servicio y la Interface -> IEstudianteServicio#44
+// Marino Alfredo
+package utn.estudiantes.servicio;
+
+import utn.estudiantes.modelo.Estudiantes2022;
+
+import java.util.List;
+
+public interface IEstudianteServicio {
+    public List<Estudiantes2022> listarEstudiantes();
+    public Estudiantes2022 buscarEstudiantePorId(Integer idEstudiantes2022);
+    public void guardarEstudiante(Estudiantes2022 estdiante);
+    public void eliminarEstudiante(Estudiantes2022 estudiante);
+
+}
