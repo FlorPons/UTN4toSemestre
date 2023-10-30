@@ -1,8 +1,8 @@
 6.1 Parámetro posicional de tipo String
 
-Se crea un nuevo archivo en paython dar_formato_str.py
+(# Se crea un nuevo archivo en python dar_formato_str.py)
 
-#dar formato a un string
+# dar formato a un string
 
 nombre = "Ariel"
 edad = 28
