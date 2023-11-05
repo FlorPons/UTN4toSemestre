@@ -24,7 +24,7 @@ soyAsincrona(function() {
 });
 
 ----------------------------------------------------------------------------------------------------
-8.3
+8.3 Generamos un callback
 
 function soyAsincrona(miCallback){
   setTimeout( function (miCallback) {
@@ -39,5 +39,28 @@ soyAsincrona(function() {
 });
 
 -----------------------------------------------------------------------------------------------------
-8.4
+8.4 Hacemos cambios hacía un algoritmo más complejo
 
+function hola(nombre, miCallback){
+  setTimeout( function (miCallback) {
+    console.log("Hola "+nombre);
+    miCallback();
+  }, 1000);
+}
+
+function adios(nombre, otroCallback) {
+  setTimeout( function() {
+    console.log("Adios", nombre);
+    otroCallback();
+  }, 1000);
+}    
+
+console.log("iniciando el proceso...");
+hola("Carlos", function() {
+  adios("Carlos", function(){
+    console.log("Terminando el proceso...");
+  })  ;
+});
+
+--------------------------------------------------------------------------------------------------
+8.5
