@@ -5,7 +5,22 @@ function soyAsincrona(){
 }
 
 console.log("iniciando el proceso...");
-soyAsincrona():
+soyAsincrona();
 console.log("Terminando el proceso...");
 
 --------------------------------------------------------------------------------------------------
+
+8.2 Generación de un callback. Ultimas pruebas
+
+function soyAsincrona(){
+  setTimeout( function (miCallback) {
+    console.log("Hola, soy una funcion asincrona");
+}, 1000);
+}
+
+console.log("iniciando el proceso...");
+soyAsincrona(function() {
+  console.log("Terminando el proceso...");
+});
+
+----------------------------------------------------------------------------------------------------
