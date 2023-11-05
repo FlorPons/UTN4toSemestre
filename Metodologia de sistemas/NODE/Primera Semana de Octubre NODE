@@ -15,7 +15,7 @@ console.log("Terminando el proceso...");
 function soyAsincrona(){
   setTimeout( function (miCallback) {
     console.log("Hola, soy una funcion asincrona");
-}, 1000);
+  }, 1000);
 }
 
 console.log("iniciando el proceso...");
@@ -24,3 +24,20 @@ soyAsincrona(function() {
 });
 
 ----------------------------------------------------------------------------------------------------
+8.3
+
+function soyAsincrona(miCallback){
+  setTimeout( function (miCallback) {
+    console.log("Hola, soy una funcion asincrona");
+    miCallback();
+  }, 1000);
+}
+
+console.log("iniciando el proceso...");
+soyAsincrona(function() {
+  console.log("Terminando el proceso...");
+});
+
+-----------------------------------------------------------------------------------------------------
+8.4
+
