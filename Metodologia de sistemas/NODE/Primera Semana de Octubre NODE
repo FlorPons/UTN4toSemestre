@@ -1,1 +1,11 @@
+8.1 Creando Asincronía con el set timeout
 
+function soyAsincrona(){
+  console.log("Hola, soy una funcion asincrona");
+}
+
+console.log("iniciando el proceso...");
+soyAsincrona():
+console.log("Terminando el proceso...");
+
+--------------------------------------------------------------------------------------------------
