@@ -11,10 +11,11 @@ print(mensaje_con_formato)
 
 -----------------------------------------------------------------------------------------------
 6.2 Avanzamos desde una tupla
-
+#datos
 nombre = "Ariel"
 edad = 28
 mensaje_con_formato = "Mi nombre es %s y tengo %d años" %(nombre,edad)
+
 
 #Creamos una tupla
 persona = ("Carla", "Gomez", 5000.00)
