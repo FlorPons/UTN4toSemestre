@@ -84,3 +84,22 @@ while variable:
     break
 else:
     print("regresa falso")
+
+#----------------------------
+#1.3 Concatenación de String Parte 1 y 2
+#1.4 Clase help() 
+
+import math
+
+#Profundizando en el tipo string
+#Concatenacion automatica en Python
+#+ es la operación de concatenar
+
+variable = 'adios'
+mensaje = 'hola' ' alumnos ' + variable
+mensaje += ' terminamos'
+#print(mensaje)
+
+#Usamos la clase help para ayudar o documentar (built-in)
+#help(str.capitalize)
+help(math.isnan)
