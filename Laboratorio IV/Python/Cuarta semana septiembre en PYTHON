@@ -44,3 +44,14 @@ print(mensaje)
 diccionario={'Nombre':'Ivan', 'Edad':'35', 'Sueldo':8000.00}
 mensaje='Nombre {dic[Nombre]} Edad {dic[Edad]} Sueldo {dic[Sueldo]:.2f}'.format(dic=diccionario)
 print(mensaje)
+
+#----------------------------
+#6.4 Uso del template literal
+
+nombre='Pepe'
+edad=28
+sueldo=3000
+mensaje=f'Nombre {nombre} Edad {edad} Sueldo {sueldo:.2f}'
+print(mensaje)
+
+print(nombre, edad, sueldo, sep=', ')
