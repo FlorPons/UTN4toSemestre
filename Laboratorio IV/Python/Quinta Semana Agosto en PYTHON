@@ -1,7 +1,28 @@
+#2.1 Comenzamos con -> Decimal, Binario, Octal y Hexadecimal#54
+# Profundizando en los sistemas de numeracion
+
+#sistema decimal
+#entero positivo o negativo
+a=10
+print(f'a: {a}')
+
+#sistema binario
+#binario con prefijo '0b', no es necesaria la letra B, pero se puede
+a = 0b1010
+print(f'a: {a}')
+
+#sistema octal
+#octal es el prefijo para decir que se usa sistema base 8, y luego se colocan las letras del alfabeto correspondientes a cada numero.
+a = 0o12 
+print(f'a: {a}')
+
+#sistema hexadecimal
+a = 0xA #hexadecimal con prefijo '0x' o '#'. No es necesaria la letra X.
+print(f"a: {a}")
 
 
-//--------------------------------------------------------------------------------------------------
-2.2 Seguimos con -> Decimal, Binario, Octal y Hexadecimal Ahora con int('valor', base)
+#//--------------------------------------------------------------------------------------------------
+#2.2 Seguimos con -> Decimal, Binario, Octal y Hexadecimal Ahora con int('valor', base)
 
 #base decimal
 #Convertir string a decimal
@@ -24,8 +45,8 @@ print(f"a base hexadeciml: {a}")
 a=int('34', 5)
 print(f"a base 5: {a}")
 
-//--------------------------------
-2.3 Tipo float como constructor y comienzo de exponencial
+#//--------------------------------
+#2.3 Tipo float como constructor y comienzo de exponencial
 
 #profundizando en el tipo float
 a=3.0
@@ -49,7 +70,7 @@ print(a)
 print(type(a))
 
 
-//------------------------------------------------------------------------------------------------------
+#//------------------------------------------------------------------------------------------------------
 #2.4 exponenciales positivos y negativos 
 #marino alfredo 
 # Profundizando tipo float
@@ -71,7 +92,8 @@ print(f" a: {a:.5f}")
 # Cualquier calculo que incluye un float, todo cambia a float
 
 a = 4.0 + 5
-//-------------------------------------------------------------------------------
+
+#//-------------------------------------------------------------------------------
 #2.5 valores infinitos positivo y negativo.
 # Alfredo Marino
 import math
