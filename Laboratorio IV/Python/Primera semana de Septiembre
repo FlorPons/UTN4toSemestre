@@ -15,3 +15,72 @@ print(f'Es de tipo nan: {math.isnan(a)}') #True
 #Modulo decimal
 a = Decimal('nan')
 print(f'Es de tipo nan: {math.isnan(a)}') #True
+
+#--------------------------------------------------
+#1.2 Tipo Bool Parte 1, 2, 3, 4 y 5 
+#Soria Ezequiel
+
+#Bool contiene los valores de true y false
+# Los tipos numericos, es false para el 0 y true para los demas valores
+
+valor = 0
+resultado = bool(valor)
+print(f'Valor: {valor}. Resultado: {resultado}')
+
+valor = 0.1
+resultado = bool(valor)
+print(f'Valor: {valor}. Resultado: {resultado}')
+
+#Tipo string -> false '', true Demas valores
+valor = ''
+resultado = bool(valor)
+print(f'Valor: {valor}. Resultado: {resultado}') 
+
+valor = 'HOLA'
+resultado = bool(valor)
+print(f'Valor: {valor}. Resultado: {resultado}')
+
+
+#tipo de colecciones -> false para los colecciones vacias
+#tipo de colecciones -> true para los colecciones vacias
+
+#Lista
+valor = []
+resultado = bool(valor)
+print(f'Valor: {valor}. Resultado: {resultado}')
+
+valor = [1, 2, 3]
+resultado = bool(valor)
+print(f'Valor: {valor}. Resultado: {resultado}')
+
+#tupla
+valor = ()
+resultado = bool(valor)
+print(f'Valor: {valor}. Resultado: {resultado}')
+
+valor = (5, )
+resultado = bool(valor)
+print(f'Valor: {valor}. Resultado: {resultado}')
+
+#Diccionario
+valor = {}
+resultado = bool(valor)
+print(f'Valor: {valor}. Resultado: {resultado}')
+
+valor = {'nombre': 'Ezequiel'}
+resultado = bool(valor)
+print(f'Valor: {valor}. Resultado: {resultado}')
+
+#Sentencias de control con bool
+if '' :
+    print('regresa verdadero')
+else:
+    print("regresa falso")
+
+#ciclos
+variable = 3
+while variable:
+    print('regresa verdadero')
+    break
+else:
+    print("regresa falso")
