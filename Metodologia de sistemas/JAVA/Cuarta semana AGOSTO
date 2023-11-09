@@ -9,3 +9,15 @@ Se utiliza spring boot.
 Se abre el archivo en intellij.
 
 ------------------------------------------------------------------------------------
+
+2.3  Configuración de la base de datos en Spring -> Parte 1 y 2
+
+#Conexion mysql
+spring.datasource.url=kdbc:mysql://localhost:3306/estudiantes
+spring.datasource.username=root
+spring.datasource.password=admin
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+-------------------------------------------------------------------------------
+2.4 Quitamos los errores y ejecutamos
+
