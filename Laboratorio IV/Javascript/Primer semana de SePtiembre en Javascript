@@ -16,7 +16,28 @@ cart.forEach((product) => {
 
 3.2 Ahora vamos al Footer
 
+# en estyles.css
 
+.modal-footer{
+    text-align: center;
+}
+
+.total-price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-buttom: 10px;
+}
+
+#en cart.js
+//modal fotter
+const modalFooter = document.createElement("div");
+modalFooter.className = "modal-footer"
+modalFooter.innerHtml = `
+<div class="total-price">Total:)</div>
+`;
+modalContainer.append(modalFooter)
+};
 
 ---------------------------------------------------------------------------------------------------
 
