@@ -23,8 +23,32 @@ print(f"a base hexadeciml: {a}")
 #base 5 valores de 0 a 4
 a=int('34', 5)
 print(f"a base 5: {a}")
+
 //--------------------------------
-2.3 
+2.3 Tipo float como constructor y comienzo de exponencial
+
+#profundizando en el tipo float
+a=3.0
+print(f"a float con 3 decimal: {a:.2f}")
+
+#Constructor de float puede recibir int y str
+a = float(10) #Le pasamos el tipo entero
+b = float('10') # Le pasamos un str
+print(f"a float: {a, b}")
+
+#notacion exponencial valores positivos y negativos
+a = 3e5
+print(f"a exponencial: {a:.3f}")
+
+a = 3e-5
+print(f"a exponencial: {a:.5f}")
+
+#Cualquier calculo que incluya float, cambia todo a float
+a = 4.0 + 5
+print(a)
+print(type(a))
+
+
 //------------------------------------------------------------------------------------------------------
 #2.4 exponenciales positivos y negativos 
 #marino alfredo 
