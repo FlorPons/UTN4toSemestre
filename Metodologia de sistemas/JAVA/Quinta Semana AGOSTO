@@ -25,6 +25,28 @@ public class Estudiante {
     private String telefono;
     private String email;
 }
+
+-----------------------------------------------------------------------------------------------------------------
+3.2 Creación del paquete repositorio y la Interface -> EstudianteRepositorio = Parte 1, 2 y 3
+
+package utn.estudiantes.repositorio;
+
+import utn.estudiantes.modelo.Estudiante;
+
+public interface EstudiantesRepositorio extends JpaRepository<Estudiante, Integer>{
+}
+
+--------
+
+package utn.estudiantes.repositorio;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import utn.estudiantes.modelo.Estudiante;
+
+public interface EstudiantesRepositorio extends JpaRepository<Estudiante, Integer>{
+}
+
+---------------------------------------------------------------------------------------------------------------
 //3.3Creamos el paquete de servicio y la Interface -> IEstudianteServicio#44
 // Marino Alfredo
 package utn.estudiantes.servicio;
