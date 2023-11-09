@@ -60,9 +60,15 @@ if(repeat){
 ----------------------------------------------------------------------------------------------------
 
 3.4 Botones de suma y resta de productos
+#en cart.js debajo de modalcontainer.append(modalBody);
 
-
-
+const decrese = modalBody.querySelector(".quantity-btn-decrese");
+decrese.addEventListener("Click", () => {
+    if (product.quanty !== 1 ) {
+        product.quanty--;
+        displayCart();
+    }
+});
 
 ---------------------------------------------------------------------------------------------------
 
