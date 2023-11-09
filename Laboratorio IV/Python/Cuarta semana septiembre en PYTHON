@@ -23,3 +23,24 @@ mensaje_con_formato = "Hola %s %s . Tu sueldo es %.2f" #  % Persona # Aqui le pa
 print(mensaje_con_formato % persona)
 
 ---------------------------------------------------------------------------------------------------------
+#6.3 Uso del método format() -> utilizamos place holder, PARTE 1,2,3
+
+nombre='Juan'
+edad=19
+sueldo=3000
+
+mensaje_con_formato = 'Nombre {} Edad {} Sueldo {:.2f}'.format(nombre, edad, sueldo)#placeholder
+print(mensaje_con_formato)
+
+mensaje = 'Nombre {0} Edad {1} Sueldo {2:.2f}'.format(nombre, edad, sueldo )#indices
+print(mensaje)
+
+mensaje = 'Nombre {} Edad {} Sueldo {:.2f}'.format(nombre, edad, sueldo )
+print(mensaje)
+
+mensaje= 'Nombre {n} Edad {e} Sueldo {s:.2f}'.format(n=nombre, e=edad, s=sueldo)
+print(mensaje)
+
+diccionario={'Nombre':'Ivan', 'Edad':'35', 'Sueldo':8000.00}
+mensaje='Nombre {dic[Nombre]} Edad {dic[Edad]} Sueldo {dic[Sueldo]:.2f}'.format(dic=diccionario)
+print(mensaje)
