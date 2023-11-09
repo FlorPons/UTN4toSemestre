@@ -48,6 +48,19 @@ modalContainer.append(modalFooter)
 ----------------------------------------------------------------------------------------------------
 
 3.4 Botones de suma y resta de productos
+#en index.js en la primer linea de codigo debajo de buyButton.addEventListener("Click", () => {
+
+const repeat = cart.some((repeatProduct) => repeatProduct.id === product.id);
+
+if(repeat){
+    cart.map((prod)=> {
+        if(prod.id === product.id) {
+            prod.quanty++;
+        }
+    });
+}else {
+    #aca va el cart.push
+}
 
 
 
