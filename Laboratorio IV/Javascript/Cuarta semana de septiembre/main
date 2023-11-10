@@ -21,3 +21,6 @@ export const crearTarea = async (req, res, next) => {
   const { titulo, descripcion } = req.body;
 
   try {
+
+    const result = await pool.query('INSERT INTO tareas ( titulo, descripcion ) VALUES ($1, $2) RETURNING *', [titulo, descripcion]);
+    result.json(result.rows[0]);
