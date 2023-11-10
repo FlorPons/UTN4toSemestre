@@ -1,1 +1,16 @@
+//Clase nº 7
+//Soria
 
+let nombre = process.env.NOMBRE || 'Sin nombre';
+
+let web = process.env.MI_WEB || 'No tengo web';
+
+console.log('Hola '+nombre)
+console.log('Mi web es: '+web)
+
+console.log('Ultima parte')
+console.log('Ultima ejecucion')
+console.log('Ultima instruccion')
+
+
+/*Tambien se muestra como instalar y ejecutar PM2*/
