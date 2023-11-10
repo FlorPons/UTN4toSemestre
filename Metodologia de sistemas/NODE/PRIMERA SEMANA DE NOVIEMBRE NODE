@@ -84,3 +84,6 @@ function escribir(ruta, contenido, cb) {
         }
     })
 }
+
+escribir(`${__dirname}/archivo1.txt`, 'Reescribimos el archivo', console.log);
+leer(`${__dirname}/archivo.txt`, console.log); //Sintaxis ES6
