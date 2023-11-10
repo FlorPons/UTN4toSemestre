@@ -1,0 +1,31 @@
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# CONTRERAS YAMILA BELEN
+# 6.1 Conexión con la base de datos
+import pg from "pg";
+
+export const pool = new pg.Pool ({
+    port: 5432,
+    host: "localhost",
+    user: "postgres",
+    password: "admin",
+
+});
+
+pool.on("conect", () => {
+    console.log("conectado a la base de datos");
+})
+
+
+
+import app from "./app.js";
+import { pool } from "./db.js";
+
+pool.query("SELECT NOW()", (err, res) => {
+    console.log(err, res);
+    app.listen(3000, () => {
+        console.log("Server on port", 3000);
+    });
+    pool.end();
+});
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
