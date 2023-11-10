@@ -43,8 +43,3 @@ export const eliminarTarea = (req, res) => {
 
   return res.send('Tarea ${req.params.id} eliminada')
 }
-
-
-
-
-
