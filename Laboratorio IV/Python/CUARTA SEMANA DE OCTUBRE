@@ -84,6 +84,20 @@ def run_game():
 
 run_game()
 
+#11.3
+
+import utils
+import read_csv
+import charts
+
+def run():
+    data = read_csv.read_csv('.app/data.csv') #leemos el csv, gracias al módulo línea 2
+    data = list(filter(lambda item : item['Continent'] == 'South America', data))
+    
+    countries = list(map(lambda x: x['Country'], data))
+    percentages = list(map(lambda x: x['World Population Percentage'], data))
+    charts.generate_pie_chart(countries, percentages)
+
 #11.5
 from typing import List
 import charts
