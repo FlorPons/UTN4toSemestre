@@ -62,3 +62,7 @@ function leer(ruta, cb){
 }
 
 leer(`${__dirname}/archivo.txt`, console.log); //Sintaxis ES6
+
+//13.3
+
+const fs = require('fs');
