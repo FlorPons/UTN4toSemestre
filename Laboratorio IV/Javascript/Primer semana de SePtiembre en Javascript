@@ -74,6 +74,12 @@ decrese.addEventListener("Click", () => {
 
 3.5 Calcular el total de la compra
 
+//modal fotter
+const total = cart.reduce((acc, el) => acc + el.price * el.quanty, 0)
+
+#debajo de modalFooter.innerHtml = ` 
+<div class="total-price">${total}</div>
+`;
 
 ---------------------------------------------------------------------------------------------------
 
