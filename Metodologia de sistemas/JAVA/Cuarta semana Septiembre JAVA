@@ -38,3 +38,17 @@ public class Libro{
     Intenger existencias;
 
 }
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+# CONTRERAS YAMILA BELEN
+# 7.2 Creación de la tabla libro en la base de datos
+
+#MySQL
+#SELECT FROM tienda_libros_db.libros;
+
+#id_libros
+#nombre_librp
+#autor
+#precio
+#existencias
+
