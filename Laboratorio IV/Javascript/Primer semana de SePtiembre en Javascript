@@ -84,3 +84,17 @@ const total = cart.reduce((acc, el) => acc + el.price * el.quanty, 0)
 ---------------------------------------------------------------------------------------------------
 
 3.6 Eliminar productos del modal -> Parte 1 y 2
+
+#en cart.js
+const deleteProduct = modalBody.querySelector(".delete-product");
+
+deleteProduct.addEventListener("click", ()=> {
+    deleteCartProduct(product.id);
+})
+
+const deleteCartProduct =(id) => {
+    const doundId = cart.findIndex((element) => element.id ===id);
+    console.log(founId);
+}
+}
+
