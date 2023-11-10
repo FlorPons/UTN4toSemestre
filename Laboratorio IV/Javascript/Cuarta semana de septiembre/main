@@ -16,3 +16,8 @@ export const listarTarea =async (req, res) => {
   }
 return res.json(resultado.rows[0]);
 }
+
+export const crearTarea = async (req, res, next) => {
+  const { titulo, descripcion } = req.body;
+
+  try {
