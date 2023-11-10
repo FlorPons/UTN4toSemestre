@@ -1,0 +1,37 @@
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+
+public class JTableExample {
+
+    public static void main(String[] args) {
+        // Crear un marco (frame) para la aplicación
+        JFrame frame = new JFrame("Ejemplo de JTable");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 300);
+
+        // Datos para la tabla
+        String[][] data = {
+            {"John", "Doe", "25"},
+            {"Jane", "Smith", "30"},
+            {"Tom", "Brown", "22"}
+        };
+
+        // Nombres de las columnas
+        String[] columnNames = {"Nombre", "Apellido", "Edad"};
+
+        // Crear un modelo de tabla con los datos y nombres de las columnas
+        DefaultTableModel model = new DefaultTableModel(data, columnNames);
+
+        // Crear la tabla con el modelo
+        JTable table = new JTable(model);
+
+        // Agregar la tabla a un panel desplazable
+        JScrollPane scrollPane = new JScrollPane(table);
+
+        // Agregar el panel desplazable al marco
+        frame.add(scrollPane);
+
+        // Hacer visible el marco
+        frame.setVisible(true);
+    }
+}
