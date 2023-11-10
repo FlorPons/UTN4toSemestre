@@ -22,3 +22,16 @@ class MiClase:
         :param param2: Este es el parametro numero 2
         :return: Este es el valor de retorno
         """
+----------------------------------------------------------------------------------------------------------------------------
+#5.2 5.2 Dunder doc (__doc__) -> parte 1 y 2
+#Bruno Marchetti
+from mi_clase import MiClase
+
+# help devuelve la documentacion de la clase
+# help(MiClase)
+
+# print(MiClase.__doc__)
+# print(MiClase.__init__.__doc__)
+# print(MiClase.mi_metodo.__doc__)  # cada metodo en si mismo es un objet
+print(MiClase.mi_metodo)
+print(type(MiClase.mi_metodo))
