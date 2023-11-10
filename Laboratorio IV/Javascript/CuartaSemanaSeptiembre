@@ -12,3 +12,7 @@ export const listarTarea =async (req, res) => {
   if (resultado.rowCount === 0) {
     return res.status(404).json([
       message: 'La tarea no existe'
+    });
+  }
+return res.json(resultado.rows[0]);
+}
