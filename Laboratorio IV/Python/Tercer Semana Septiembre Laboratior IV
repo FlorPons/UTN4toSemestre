@@ -72,3 +72,15 @@ llaves = '-'.join(diccionario.keys())
 valores = '-'.join(diccionario.values())
 print(f'Llaves: {llaves}, Type: {type(llaves)}')
 print(f'Valores: {valores}, Type: {type(valores)}')
+---------------------------------------------------------------------------------------------------------------------------
+#5.5 Método split cadena a lista -> Parte 1 y 2
+#Bruno Marchetti
+cursos_separados_coma = 'Java,Python,Node,Javascript,Spring'
+lista_cursos = cursos_separados_coma.split(',', 2)
+print(f'Lista de cursos: {lista_cursos}')
+print(type(lista_cursos))
+
+cursos_separados_coma = 'Java,Python,Node,Javascript,Spring'
+lista_cursos = cursos_separados_coma.split(',', 2)
+print(f'Lista de cursos: {lista_cursos}')
+print(len(lista_cursos))
