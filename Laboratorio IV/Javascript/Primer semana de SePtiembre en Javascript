@@ -93,8 +93,11 @@ deleteProduct.addEventListener("click", ()=> {
 })
 
 const deleteCartProduct =(id) => {
-    const doundId = cart.findIndex((element) => element.id ===id);
-    console.log(founId);
+    const foundId = cart.findIndex((element) => element.id ===id);
+    cart.splice(foundId, 1);
+    displayCart();
+    }
 }
-}
+
+
 
