@@ -252,3 +252,66 @@ export const eliminarTarea = (req, res) => res.send('eliminando tarea unica');
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # CONTRERAS YAMILA BELEN
 # 6.3 Método para listarTareas (en plural)
+
+import Router from "express-promise-router";
+import{ actualizarTarea, crearTarea, eliminarTarea, listarTareas } from "../controllers/tareas.controller.js"
+
+const router = Router();
+
+router.get('/tareas', listarTareas);
+
+router.get('/tareas/:id', listarTarea);
+
+router.post('/tareas', crearTarea);
+
+router.put('/tareas/:id', actualizarTarea);
+
+router.delete('/tareas/:id', eliminarTarea);
+
+export default router;
+
+
+import {pool} from '../db.js';
+
+export const listarTareas = async (req, res) => {
+
+    const resultado = await pool.query('SELECT * FROM taras1');
+    console.log(resultado);
+    return res.json(resultado.rows);
+} 
+
+export const obtenerTareaUnica = (req, res) => res.send('obteniendo tarea unica');
+
+export const crearTarea = async (req, res, next) => {
+    const { titulo, descripcion } = req.body;
+    
+    try { 
+        const result = await pool.query('INSERT INTO tareas ( titulo, descripcion ) VALUES ($1, $2) RETURNING *', [ titulo, descripcion]);
+        res.json(res.rows[0]);
+        console.log(result.rows[0];)
+    } catch (error) {
+        if (error.code === '2305') {
+            return res.status(409).json({
+                message: 'Ya existe una tarea con ese titulo'
+                })
+        }
+        console.log(error);
+        next(error);
+
+    } 
+}
+
+export const actualizarTarea = (req, res) => res.send('actualizando tarea unica');
+
+export const eliminarTarea = (req, res) => res.send('eliminando tarea unica');
+
+//JSON Content
+
+{
+    "titulo": "Tarea 5",
+    "descripcion": "mi descripcion",
+}
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# CONTRERAS YAMILA BELEN
+# 6
