@@ -45,3 +45,20 @@ console.log(__filename);
 
 global.miVariable = `mi variable global`;
 console.log(miVariable);
+
+// 13.1 y 13.2 introduccion y teoeria, leer archivos
+// traemos el módulo de file system
+// sirve para trabajar y manipular archivos de nuestro sistema
+
+const fs = require('fs'); //ya viene instalado en el core de Node
+
+//Primero leemos el archivo.txt
+function leer(ruta, cb){
+    fs.readFile(ruta, (err, data) => {
+        cb(data.toString());
+    
+    
+    })
+}
+
+leer(`${__dirname}/archivo.txt`, console.log); //Sintaxis ES6
