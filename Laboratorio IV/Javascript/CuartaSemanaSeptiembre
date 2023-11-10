@@ -16,3 +16,4 @@ export const listarTarea =async (req, res) => {
   }
 return res.json(resultado.rows[0]);
 }
+
