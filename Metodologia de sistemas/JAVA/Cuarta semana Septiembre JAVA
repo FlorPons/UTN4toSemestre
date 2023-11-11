@@ -66,3 +66,28 @@ public interface LibroRepositorio extends JpaRepository<Libro, Intenger> {
 }
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# CONTRERAS YAMILA BELEN
+
+#7.4  Capa de Servicio (buenas prácticas)
+#Parte 1. Interface ILibroServicio
+
+package utn.tienda_libros.servicio;
+
+import utn.tienda_libros.servicio;
+
+import java.util.list;
+
+public interface ILibroServicio {
+
+    public List<Libro> listarLibros();
+
+    public Libro buscarLibroPorId(Integer idLibro);
+
+    public void guardarLibro(Libro libro);
+
+    public void eliminarLibro(Libro libro)
+}
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
