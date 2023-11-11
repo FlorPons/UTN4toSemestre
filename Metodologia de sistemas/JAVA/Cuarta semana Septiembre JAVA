@@ -52,3 +52,17 @@ public class Libro{
 #precio
 #existencias
 
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------
+# CONTRERAS YAMILA BELEN
+# 7.3 Capa de Datos -> JpaRepository
+
+package utn.tienda_libros.repositorio;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import utn.tienda_libros.modelo.libro;
+
+public interface LibroRepositorio extends JpaRepository<Libro, Intenger> {
+    
+}
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------
